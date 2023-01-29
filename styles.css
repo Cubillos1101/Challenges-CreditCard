@@ -1,0 +1,102 @@
+:root{
+    --border: hsl(249, 99%, 64%);
+    --borderActive: hsl(278, 94%, 30%);
+    --error: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --lightGrayish: hsl(270, 3%, 87%);
+    --darkGrayish: hsl(279, 6%, 55%);
+    --veryDark: hsl(278, 68%, 11%);
+    --md: 18px;
+}
+body{
+        margin: 0;
+        font-family: 'Space Grotesk', sans-serif;
+}
+
+.info-card{
+    width: 400px;
+    height: 380px;
+    color: var(--veryDark);
+    margin: 0;
+    position: absolute;
+    top: 28%;
+    left: 60%;
+    
+}
+
+#text-info{
+    font-size: var(--md);
+    padding: 20px 0 8px;
+}
+.box{
+    width: 350px;
+    height: 40px;
+    color:var(--lightGrayish);
+    border-radius: 10px;
+    border-color: var(--lightGrayish);
+    padding: 0 0 0 16px;
+    font-size: var(--md);
+    font-family: 'Space Grotesk', sans-serif;
+}
+.box-info{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-date{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color:var(--lightGrayish);
+    border-radius: 10px;
+    border-color: var(--lightGrayish);
+    padding: 0 0 0 16px;
+    font-size: var(--md);
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.card-date{
+    width: 200px;
+    margin: 0;
+}
+.card-codi{
+    width: 200 px;
+    margin: 0;
+    position: absolute;
+    top: 190px;
+    left: 50%;;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.box-cvc{
+    width: 150px;
+    height: 40px;
+    color:var(--lightGrayish);
+    border-radius: 10px;
+    border-color: var(--lightGrayish);
+    padding: 0 0 0 16px;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    font-size: var(--md);
+}
+.confirm{
+    width: 93%;
+    height: 55px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--veryDark);
+    border-radius: 10px;
+    color: var(--White);
+    font-size: var(--md)
+    font-family: 'Space Grotesk', sans-serif;
+}
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
