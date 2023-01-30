@@ -16,11 +16,12 @@ body{
 .info-card{
     width: 400px;
     height: 380px;
-    color: var(--veryDark);
+    color: var(--borderActive);
     margin: 0;
     position: absolute;
     top: 28%;
     left: 60%;
+    letter-spacing: 1px;
     
 }
 
@@ -35,7 +36,7 @@ body{
     border-radius: 10px;
     border-color: var(--lightGrayish);
     padding: 0 0 0 16px;
-    font-size: var(--md);
+    font-size: var 16px;
     font-family: 'Space Grotesk', sans-serif;
 }
 .box-info{
@@ -92,11 +93,48 @@ body{
     background-color: var(--veryDark);
     border-radius: 10px;
     color: var(--White);
-    font-size: var(--md)
+    font-size: var(--md);
     font-family: 'Space Grotesk', sans-serif;
 }
-The designs were created to the following widths:
+
+.imgCardFront{
+    width: 447x;
+    height: 255px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.imgCardBack{
+    width: 447x;
+    height: 255px;
+    position: absolute;
+    top: 57%;
+    left: 18%;
+    object-fit: cover;
+}
+.circle-white{
+    width: 50px;
+    height: 50px;
+    background-color: var(--White);
+    border-radius: 50px;
+    position: absolute;
+    top: 13%;
+    left: 10%;
+}
+.circle-only{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    border: solid 3px var(--White);
+    overflow:hidden;
+    position: absolute;
+    top: 18%;
+    left: 26%;
+}
+/*The designs were created to the following widths:
 
 - Mobile: 375px
-- Desktop: 1440px
+- Desktop: 1440px*/
 
