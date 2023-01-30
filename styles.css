@@ -12,10 +12,15 @@ body{
         margin: 0;
         font-family: 'Space Grotesk', sans-serif;
 }
+::placeholder{
+    color:var(--lightGrayish);
+    font-size: var 16px;
+    font-family: 'Space Grotesk', sans-serif;
+}
 
 .info-card{
-    width: 400px;
-    height: 380px;
+    width: 380px;
+    height: 400px;
     color: var(--borderActive);
     margin: 0;
     position: absolute;
@@ -30,45 +35,59 @@ body{
     padding: 20px 0 8px;
 }
 .box{
-    width: 350px;
+    width: 100%;
     height: 40px;
     color:var(--lightGrayish);
     border-radius: 10px;
-    border-color: var(--lightGrayish);
+    border: 1px solid var(--lightGrayish);
     padding: 0 0 0 16px;
     font-size: var 16px;
     font-family: 'Space Grotesk', sans-serif;
 }
 .box-info{
-    width: 160px;
-    height: 40px;
+  display: flex;
+  gap: 12px;
+}
+.error{
+   color: blanchedalmond; 
+   font-size: 16px;
+}
+.error-container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 5px;
 }
 .box-date{
-    width: 50px;
+    width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
     color:var(--lightGrayish);
     border-radius: 10px;
-    border-color: var(--lightGrayish);
+    border: 1px solid var(--lightGrayish);
     padding: 0 0 0 16px;
     font-size: var(--md);
     font-family: 'Space Grotesk', sans-serif;
-    display: flex;
-    align-items: center;
+}
+.card-dates,
+.card-codis{
+    padding: 2px 0 8px;
 }
 .card-date{
-    width: 200px;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+}
+#mm-card,
+#yy-card,
+#cvc-card{
+    text-align: center;
 }
 .card-codi{
     width: 200 px;
     margin: 0;
     position: absolute;
-    top: 190px;
+    top: 187px;
     left: 50%;;
     font-family: 'Space Grotesk', sans-serif;
 }
@@ -77,24 +96,25 @@ body{
     height: 40px;
     color:var(--lightGrayish);
     border-radius: 10px;
-    border-color: var(--lightGrayish);
+    border: 1px solid var(--lightGrayish);
     padding: 0 0 0 16px;
     position: absolute;
-    top: 240px;
+    top: 236px;
     left: 50%;
     font-size: var(--md);
 }
 .confirm{
-    width: 93%;
+    width: 105%;
     height: 55px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    grid: 0;
     background-color: var(--veryDark);
     border-radius: 10px;
     color: var(--White);
     font-size: var(--md);
     font-family: 'Space Grotesk', sans-serif;
+    align-items: center;
+    justify-content: center;
 }
 
 .imgCardFront{
@@ -132,6 +152,61 @@ body{
     position: absolute;
     top: 18%;
     left: 26%;
+}
+.number-card-img{
+    color: var(--White);
+    font-size: 28px;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    letter-spacing: 3px;
+    top: 58%;
+    left: 10%;
+}
+.name-card-img{
+    color: var(--White);
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    letter-spacing: 1px;
+    top: 78%;
+    left: 10%; 
+    text-transform: uppercase;
+}
+.mm-card-img{
+    color: var(--White);
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    letter-spacing: 1px;
+    top: 78%;
+    left: 80%; 
+}
+.space-card{
+    color: var(--White);
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    letter-spacing: 1px;
+    top: 77.5%;
+    left: 85%; 
+}
+.yy-card-img{
+    color: var(--White);
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    letter-spacing: 1px;
+    top: 78%;
+    left: 87%; 
+}
+.cvc-card-img{
+    color: var(--White);
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    letter-spacing: 2px;
+    top: 43%;
+    left: 80%; 
 }
 /*The designs were created to the following widths:
 

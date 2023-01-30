@@ -15,33 +15,44 @@
         <img src="./images/bg-card-front.png" alt="">
         <div class="circle-white"></div>
         <div class="circle-only"></div>
+        <div class="number-card-img">0000 0000 0000 0000</div>
+        <div class="name-card-img" type="text" > Jane Appleseed</div>
+        <div class="mm-card-img">00</div>
+        <div class="space-card">/</div>
+        <div class="yy-card-img">00</div>
     </section>
     <section class="imgCardBack">
         <img src="./images/bg-card-back.png" alt="">
+        <div class="cvc-card-img">000</div>
     </section>
     <section>
         <img src="./images/bg-main-desktop.png" alt="">
     </section>
     
-    <section class="info-card">
+    <form class="info-card">
         <div id='text-info'class="card-name">CARDHOLDER NAME</div>
-        <input class="box" type="text" name="name-card" value="e.g Jane Appleseed">
+        <input class="box" type="text" id="name-card" placeholder="e.g Jane Appleseed">
+        <div class="error name-error"></div>
         <div id='text-info'class="card-number">CARD NUMBER</div>
-        <input class="box" type="number" name="number-card" value="1234 5678 9123 0000">
-     
-        <p id='text-info'class="card-date">EXP.DATE(MM/YY)</p>
-        <p id='text-info'class="card-codi">CVC</p>
-        
-        <div class="box-info">
-            <input class="box-date" type="text" name="mount-card" value="MM"> 
-            <input class="box-date" type="text" name="years-card" value="YY">
+        <input class="box" type="text" autocomplete=off  maxlength="19" id="number-card" placeholder="1234 5678 9123 0000">
+        <div class="error error-number"></div>
+        <div id='text-info'class="card-date">
+            <label class="card-dates">EXP.DATE(MM/YY)</label>
+            <label class="card-codis">CVC</label> 
+            <div class="box-info"> 
+                <input class="box-date" type="text" maxlength="2" name="mount-card" id="mm-card" placeholder="MM"> 
+                <input class="box-date" type="text" maxlength="2" name="years-card" id="yy-card" placeholder="YY">
+            </div>
+            <input class="box-date" type="text" maxlength="3" name="codig-card" id="cvc-card" placeholder="e.g 123">
+            <div class="error-container">
+                <div class="mm-error error"></div>
+            </div>  
+            <div class="cvc-error error"></div>
         </div>
-        <input class="box-cvc" type="text" name="codig-card" value="123">
-      
         <button type="button" class="confirm" >Confirm</button>
+       
 
-
-    </section>
+    </form>
     <script src="./script.js"></script>
 </body>
 </html>
