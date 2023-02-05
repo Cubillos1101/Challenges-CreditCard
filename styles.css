@@ -18,7 +18,8 @@ body{
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.info-card{
+.info-card,
+.thanks-you{
     width: 380px;
     height: 400px;
     color: var(--borderActive);
@@ -28,6 +29,13 @@ body{
     left: 60%;
     letter-spacing: 1px;
     
+}
+
+.img-1{
+    display: block;
+}
+.img-2{
+    display: none;
 }
 
 #text-info{
@@ -103,7 +111,8 @@ body{
     left: 50%;
     font-size: var(--md);
 }
-.confirm{
+.confirm,
+.continue{
     width: 105%;
     height: 55px;
     display: flex;
@@ -127,7 +136,7 @@ body{
     border-radius: 50px;
 }
 .imgCardBack{
-    width: 447x;
+    width: 447px;
     height: 255px;
     position: absolute;
     top: 57%;
@@ -207,6 +216,65 @@ body{
     letter-spacing: 2px;
     top: 43%;
     left: 80%; 
+}
+.thanks-you{
+    padding: 90px 0 0;
+    display: none;
+}
+.thanks-you img{
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: auto;
+    padding: 0 0 20px;
+}
+.tks{
+    font-size: 35px;
+    letter-spacing: 4px;
+    color: var(--veryDark);
+    margin: 0 0 -10px 0 ;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+.text{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--lightGrayish);
+    padding: auto;
+    text-align: center;
+}
+.continue{
+    margin-top: 50spx;
+}
+
+@media (max-width: 375px) {
+
+    .img-1{
+       display: none;
+    }
+    .img-2{
+        display: block;
+        width: 180vw;
+     }
+     .info-card{
+        width: 600px;
+        margin: auto;
+        position: relative;
+        top: 70%;
+        left: 130px;
+     }
+    .imgCardFront img{
+      width: 600px;
+     }
+     .number-card-img{
+        font-size: 24px;
+     }
+     .imgCardBack img{
+        position:absolute; 
+        top: 50px;
+     }
+     
+
 }
 /*The designs were created to the following widths:
 

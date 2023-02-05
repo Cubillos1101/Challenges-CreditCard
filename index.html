@@ -11,22 +11,23 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section class="imgCardFront">
-        <img src="./images/bg-card-front.png" alt="">
-        <div class="circle-white"></div>
-        <div class="circle-only"></div>
-        <div class="number-card-img">0000 0000 0000 0000</div>
-        <div class="name-card-img" type="text" > Jane Appleseed</div>
-        <div class="mm-card-img">00</div>
-        <div class="space-card">/</div>
-        <div class="yy-card-img">00</div>
-    </section>
+    <section class="back-board"></section>
+    <img src="./images/bg-main-desktop.png" alt="" class="img-1">
+    <img src="./images/bg-main-mobile.png" alt="" class="img-2">
     <section class="imgCardBack">
         <img src="./images/bg-card-back.png" alt="">
         <div class="cvc-card-img">000</div>
-    </section>
-    <section>
-        <img src="./images/bg-main-desktop.png" alt="">
+        </section>
+        <section class="imgCardFront">
+            <img src="./images/bg-card-front.png" alt="">
+            <div class="circle-white"></div>
+            <div class="circle-only"></div>
+            <div class="number-card-img">0000 0000 0000 0000</div>
+            <div class="name-card-img" type="text" > Jane Appleseed</div>
+            <div class="mm-card-img">00</div>
+            <div class="space-card">/</div>
+            <div class="yy-card-img">00</div>
+        </section>
     </section>
     
     <form class="info-card">
@@ -50,9 +51,15 @@
             <div class="cvc-error error"></div>
         </div>
         <button type="button" class="confirm" >Confirm</button>
-       
-
     </form>
+
+    <section class="thanks-you" >
+        <img src="./images/icon-complete.svg" alt="">
+        <h1 class="tks">THANKS YOU!</h1>
+        <p class="text">We've added your card details</p>
+        <button type="button" class="continue" >continue</button>
+    </section>
+
     <script src="./script.js"></script>
 </body>
 </html>

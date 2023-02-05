@@ -20,6 +20,9 @@ let cvcError = document.querySelector('.cvc-error');
 
 let btnConfirm = document.querySelector('.confirm')
 
+let formSection = document.querySelector('.info-card');
+let thankSection = document.querySelector('.thanks-you');
+
 
 let newNameCard = []
 let newNumberCard = []
@@ -125,7 +128,7 @@ function confirm(){
 
     if(nameValid == true && numberValid == true && mmValid == true  && yyValid == true  && cvcValid == true){
         formSection.style.display = 'none';
-        thanksSection.style.display = 'block';
+        thankSection.style.display = 'block';
     }
 return
 }
